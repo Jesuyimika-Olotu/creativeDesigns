@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
+    <title>Document</title>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+
+  <!-- 
+    Attribution Image one
+Photo by <a href="https://unsplash.com/@homajob?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Scott Graham</a> on <a href="https://unsplash.com/photos/person-holding-pencil-near-laptop-computer-5fNmWej4tAA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+-->
+  
+  <body class="">
+    <header style="background-image: url('images/home-banner-image.jpg'); background-size: cover;" class="h-[35rem] pl-24">
+        <nav class="flex justify-between bg-gradient/50">
+            <div>
+                <p class="p-4 text-[1.5rem]">LOGO</p>
+            </div>
+            <ul class="flex mx-auto text-white">
+                <li class="p-4 text-[1.2rem]"><a href="">Home</a></li>
+                <li class="p-4 text-[1.2rem]"><a href="">About</a></li>
+                <li class="p-4 text-[1.2rem]"><a href="">Services</a></li>
+                <li class="p-4 text-[1.2rem]"><a href="">Price</a></li>
+                <li class="p-4 text-[1.2rem]"><a href="">Team</a></li>
+                <li class="p-4 text-[1.2rem]"><a href="">Portfolio</a></li>
+                <li class="p-4 text-[1.2rem]"><a href="">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="flex flex-col justify-center items-center">
+          <div class="my-[10%] text-center bg-slate-300/50 rounded-2xl p-4 shadow-lg shadow-red-500/70">
+            <h1 class="text-6xl text-red-400">Creative Designs</h1>
+            <p class="font-sans text-xl italic text-gray-600 py-2">The best design company you know</p>
+          </div>
+        </div>
+    </header>
+
+    <section class="px-24 pb-20">
+      <h2 class="text-green-500 text-[2.2rem] text-center pt-12 pb-10">About Our Company</h2>
+      <div class="flex">
+        <div class="flex-1 text-center border-2 border-green-500 content-center rounded-tl-lg rounded-bl-lg">      
+          <h3 class="text-green-700 text-3xl font-sans ">UI/UX Design</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, sapiente!</p>
+          <button class="bg-red-500 text-white mt-4 p-3 rounded-2xl">Learn More</button>
+        </div>
+        <div class="flex-1">
+          <img class="rounded-br-full rounded-tr-full" src="images/home-banner-image.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="flex pt-10">
+        <div class="flex-1 text-center bg-gray-100 content-center rounded-tl-full rounded-bl-full">      
+          <h3 class="text-green-700 text-3xl font-sans ">UI/UX Design</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, sapiente!</p>
+          <button class="bg-red-500 text-white mt-4 p-3 rounded-2xl">Learn More</button>
+
+        </div>
+        <div class="flex-1">
+          <img class="rounded-br-lg rounded-tr-lg" src="images/home-banner-image.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-50 py-8">
+      <h3 class="text-center text-3xl text-red-500">Always Behind The Brands</h3>
+      <p class="text-center italic text-green-700">The Web Development Company for You To Move Your Brand Forward</p>
+      <div class="grid grid-cols-3 gap-10 px-24">
+        <div class="py-10">
+          <h4><strong>Website</strong></h4>
+          <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, numquam asperiores. Eos doloremque accusantium laborum.</p>
+        </div>
+        <div class="py-10">
+          <h4><strong>Website</strong></h4>
+          <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, numquam asperiores. Eos doloremque accusantium laborum.</p>
+        </div>
+        <div class="py-10">
+          <h4><strong>Website</strong></h4>
+          <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, numquam asperiores. Eos doloremque accusantium laborum.</p>
+        </div>
+        <div class="py-3">
+          <h4><strong>Website</strong></h4>
+          <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, numquam asperiores. Eos doloremque accusantium laborum.</p>
+        </div>
+        <div class="py-3">
+          <h4><strong>Website</strong></h4>
+          <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, numquam asperiores. Eos doloremque accusantium laborum.</p>
+        </div>
+        <div class="py-3">
+          <h4><strong>Website</strong></h4>
+          <p class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, numquam asperiores. Eos doloremque accusantium laborum.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-24 py-16">
+      <h3 class="text-center text-red-500 text-3xl pb-6">Our Beloved Staff Members</h3>
+      <div class="flex flex-1">
+        <img src="images/home-banner-image.jpg" class="w-[33%] px-6" alt="">
+        <img src="images/home-banner-image.jpg" class="w-[33%] px-6" alt="">
+        <img src="images/home-banner-image.jpg" class="w-[33%] px-6" alt="">
+      </div>
+    </section>
+
+    <footer class="px-24 bg-gray-50 pb-10">
+    <div class="grid grid-cols-2 gap-10 py-10 text-center">
+      <div>
+        <ul>
+          <li>Home</li>
+          <li>Home</li>
+          <li>Home</li>
+          <li>Home</li>
+          <li>Home</li>
+        </ul>
+      </div>
+  
+        <div>
+          <ul>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+          </ul>
+        </div>
+    </div>
+    
+      <p class="text-center">Copyright &copy;2024</p>
+    </footer>
+  </body>
+</html>
